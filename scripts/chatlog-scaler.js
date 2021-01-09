@@ -93,7 +93,7 @@ Hooks.once('setup', function () {
           chatlog_scaler.bind(this)(event);
           return existing_onWheel.bind(this)(event);
       },
-      'MIXED',
+      'WRAPPER',
     )
   }
 )
