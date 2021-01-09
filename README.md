@@ -15,6 +15,11 @@ A [FoundryVTT](https://foundryvtt.com/) module that enables you to change the fo
 
 # Changelog
 
+## 0.0.2 - Released on 2021-01-08
+Now using updated `shim.js` from [libWrapper v1.3.4.0](https://github.com/ruipin/fvtt-lib-wrapper/releases/tag/v1.3.4.0).
+
+Fixed wrapper type from `MIXED` to `WRAPPER`.
+
 ## 0.0.1 - Released on 2021-01-03
 Initial release. 
 
@@ -26,5 +31,5 @@ Got the basic funtionality to work.
 This module relied heavily on [The League of Foundry Developer's FoundryVTT Module Template](https://github.com/League-of-Foundry-Developers/FoundryVTT-Module-Template). This is a great resource to get started in developing cool stuff for FoundryVTT!
 
 ## ruipin's libWrapper
-This module uses [ruipin's libWrapper library](https://github.com/ruipin/fvtt-lib-wrapper/wiki/Modules-using-libWrapper). Take a look at his stuff if you want to develop modules for FVTT that override its default behaviors.
+This module uses [ruipin's libWrapper library](https://github.com/ruipin/fvtt-lib-wrapper/). Take a look at his stuff if you want to develop modules for FVTT that override its default behaviors.
 
