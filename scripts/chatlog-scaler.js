@@ -1,4 +1,9 @@
-import { libWrapper } from './shim.js';
+//import { libWrapper } from './shim.js';
+
+Hooks.once('ready', () => {
+  if(!game.modules.get('lib-wrapper')?.active && game.user.isGM)
+      ui.notifications.error("The 'Scene Clicker' module requires the 'libWrapper' module. Please install and activate it.");
+});
 
 const MODULE_ID = 'chatlog-scaler';
 const MODULE_NAME = "Chat Log Scaler";
@@ -12,7 +17,7 @@ function getSetting (settingName) {
 console.log("By using this module you are agreeing to sell your soul to The Dark Lord Asmodeus.")
 
 // Need to edit this function:
-// KeyboardManager._onWheel, line 2834 from foundry.js
+// MouseManager._onWheel, line 1872 from foundry.js
 
 function chatlog_scaler(event){
   // Check if control is pressed.
@@ -86,7 +91,7 @@ function chatlog_scaler(event){
 Hooks.once('setup', function () {
     libWrapper.register( 
       MODULE_ID, 
-      'KeyboardManager.prototype._onWheel', 
+      'MouseManager.prototype._onWheel', 
         function(existing_onWheel, event) {
           //event.preventDefault();
           //console.log("I'M IN, BABY! BOO-MUTHA-FUCKIN'-YAAA!!!")
