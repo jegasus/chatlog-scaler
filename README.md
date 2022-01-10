@@ -16,6 +16,10 @@ A [FoundryVTT](https://foundryvtt.com/) module that enables you to change the fo
 
 # Changelog
 
+## 0.0.4 - Released on 2022-01-09
+Fixed module to work on Foundry v9. 
+Removed the use of the `libWrapper` shim. Now, the full `libWrapper` library is required to run this module.
+
 ## 0.0.3 - Released on 2021-01-30
 Fixed Firefox bug. Now module works in Chrome and Firefox.
 
